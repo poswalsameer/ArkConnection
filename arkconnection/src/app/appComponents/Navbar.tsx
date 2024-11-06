@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='mx-6 h-20 w-[95%] bg-[#ddbea9] shadow-[#7f5539] text-[#344e41] rounded-full flex justify-between items-center'>
+    <div className='mx-6 h-20 w-[95%] bg-[#ddbea9] text-[#344e41] rounded-full flex justify-between items-center'>
 
         <div className='mx-10'>
             <img src="./arkConnection-horizontal.png" alt="Website logo" 

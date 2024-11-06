@@ -18,7 +18,7 @@ function Hero() {
             <div className='max-w-xl text-base text-center text-[#cb997e] font-bold'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quibusdam provident quo molestiae, distinctio quos nemo consequatur laboriosam, dolorem aspernatur sit 
             </div>
-            <Button className='mt-3 h-12 w-36 bg-[#344e41] hover:bg-[#3d5c4c] rounded-full text-[#e6ccb2] text-base font-bold hover:'>
+            <Button className='mt-3 h-12 w-36 bg-[#344e41] hover:bg-[#3d5c4c] rounded-full text-[#e6ccb2] text-base font-bold'>
                 Chat Now
             </Button>
         </div>
