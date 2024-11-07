@@ -10,27 +10,27 @@ function page() {
         {
           "question": "Who is considered the author of the *Mahabharata*?",
           "options": ["Vyasa", "Valmiki", "Tulsidas", "Kalidasa"],
-          "answer": "Vyasa"
+          "answer": 0
         },
         {
           "question": "Who was the eldest of the Pandavas?",
           "options": ["Yudhishthira", "Bhima", "Arjuna", "Nakula"],
-          "answer": "Yudhishthira"
+          "answer": 0
         },
         {
           "question": "Which warrior from the Kaurava side was invincible until his death?",
           "options": ["Duryodhana", "Bhishma", "Karna", "Dushasana"],
-          "answer": "Bhishma"
+          "answer": 1
         },
         {
           "question": "What is the name of the sacred conversation between Arjuna and Krishna?",
           "options": ["Vishnu Sahasranama", "Bhagavad Gita", "Ramayana", "Mahabharata"],
-          "answer": "Bhagavad Gita"
+          "answer": 1
         },
         {
           "question": "Who was the main antagonist of the *Mahabharata* war?",
           "options": ["Karna", "Duryodhana", "Bhishma", "Shakuni"],
-          "answer": "Duryodhana"
+          "answer": 1
         }
       ],
 
@@ -38,27 +38,27 @@ function page() {
         {
           "question": "Which character is known as the great archer of the Pandavas?",
           "options": ["Yudhishthira", "Bhima", "Arjuna", "Nakula"],
-          "answer": "Arjuna"
+          "answer": 2
         },
         {
           "question": "Who was the mother of the Kauravas?",
           "options": ["Kunti", "Gandhari", "Satyavati", "Subhadra"],
-          "answer": "Gandhari"
+          "answer": 1
         },
         {
           "question": "Who was the teacher of both the Pandavas and Kauravas in the *Mahabharata*?",
           "options": ["Drona", "Kripacharya", "Bhishma", "Narada"],
-          "answer": "Drona"
+          "answer": 0
         },
         {
           "question": "Who is known for having caused the downfall of Draupadi during the game of dice?",
           "options": ["Duryodhana", "Shakuni", "Karna", "Bhishma"],
-          "answer": "Shakuni"
+          "answer": 1
         },
         {
           "question": "Which epic battle is the central event of the *Mahabharata*?",
           "options": ["Kurukshetra War", "Ramayana War", "Mahapadma War", "War of the Devas"],
-          "answer": "Kurukshetra War"
+          "answer": 0
         }
       ],
 
@@ -66,27 +66,27 @@ function page() {
         {
           "question": "Who was the eldest son of the Kauravas?",
           "options": ["Dushasana", "Duryodhana", "Vikarna", "Dhrishtadyumna"],
-          "answer": "Duryodhana"
+          "answer": 1
         },
         {
           "question": "Which warrior was known as the *Karna* of the Pandavas?",
           "options": ["Bhima", "Draupadi", "Abhimanyu", "Arjuna"],
-          "answer": "Abhimanyu"
+          "answer": 2
         },
         {
           "question": "Who was the wife of Arjuna and mother of his son Abhimanyu?",
           "options": ["Draupadi", "Subhadra", "Ulupi", "Chitrangada"],
-          "answer": "Subhadra"
+          "answer": 1
         },
         {
           "question": "Which character had a boon that made him invincible against all warriors except Arjuna?",
           "options": ["Karna", "Bhishma", "Duryodhana", "Shakuni"],
-          "answer": "Karna"
+          "answer": 0
         },
         {
           "question": "Who was the mother of the Pandavas?",
           "options": ["Gandhari", "Kunti", "Satyavati", "Subhadra"],
-          "answer": "Kunti"
+          "answer": 1
         }
       ]
 

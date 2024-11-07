@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+import QuizReportContextProvider from "./context/quizReportContextProvider";
 import localFont from "next/font/local";
 import { Poppins } from 'next/font/google';
 import "./globals.css";
+import type { Metadata } from "next";
+
 
 const poppins = Poppins({
   weight: "300",
@@ -20,6 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <QuizReportContextProvider>
     <html lang="en">
       <body
         className={poppins.className}
@@ -27,5 +30,6 @@ export default function RootLayout({
         {children}
       </body>
     </html>
+    </QuizReportContextProvider>
   );
 }
