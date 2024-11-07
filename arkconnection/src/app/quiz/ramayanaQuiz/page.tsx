@@ -5,35 +5,37 @@ import React, { useState, useEffect } from 'react'
 
 function page() {
 
-    const quiz1 = [
-        {
-          "question": "Who was the father of Lord Rama?",
-          "options": ["Dasharatha", "Vishwamitra", "Janaka", "Sugriva"],
-          "answer": "Dasharatha"
-        },
-        {
-          "question": "Which kingdom was ruled by Ravana?",
-          "options": ["Ayodhya", "Mithila", "Kishkindha", "Lanka"],
-          "answer": "Lanka"
-        },
-        {
-          "question": "Who helped Lord Rama in building a bridge to Lanka?",
-          "options": ["Hanuman", "Vibhishana", "Sugriva", "Nala and Nila"],
-          "answer": "Nala and Nila"
-        },
-        {
-          "question": "What was the name of Lord Rama's devoted wife?",
-          "options": ["Mandodari", "Kaikeyi", "Sita", "Urmila"],
-          "answer": "Sita"
-        },
-        {
-          "question": "Who was the mother of the demon king Ravana?",
-          "options": ["Kaushalya", "Mandodari", "Kaikeyi", "Kaikesi"],
-          "answer": "Kaikesi"
-        }
-      ]
-    
-    const quiz2 = [
+    const quizzes = [ 
+
+      [
+      {
+        "question": "Who was the father of Lord Rama?",
+        "options": ["Dasharatha", "Vishwamitra", "Janaka", "Sugriva"],
+        "answer": "Dasharatha"
+      },
+      {
+        "question": "Which kingdom was ruled by Ravana?",
+        "options": ["Ayodhya", "Mithila", "Kishkindha", "Lanka"],
+        "answer": "Lanka"
+      },
+      {
+        "question": "Who helped Lord Rama in building a bridge to Lanka?",
+        "options": ["Hanuman", "Vibhishana", "Sugriva", "Nala and Nila"],
+        "answer": "Nala and Nila"
+      },
+      {
+        "question": "What was the name of Lord Rama's devoted wife?",
+        "options": ["Mandodari", "Kaikeyi", "Sita", "Urmila"],
+        "answer": "Sita"
+      },
+      {
+        "question": "Who was the mother of the demon king Ravana?",
+        "options": ["Kaushalya", "Mandodari", "Kaikeyi", "Kaikesi"],
+        "answer": "Kaikesi"
+      }
+      ],
+      
+      [
         {
           "question": "Who was the mentor and teacher of Lord Rama?",
           "options": ["Vishwamitra", "Vashistha", "Valmiki", "Narada"],
@@ -59,9 +61,9 @@ function page() {
           "options": ["Yamuna", "Ganga", "Sarasvati", "Godavari"],
           "answer": "Ganga"
         }
-      ]
-    
-    const quiz3 = [
+      ],
+
+      [
         {
           "question": "Who was the one who informed Rama about Sita's abduction by Ravana?",
           "options": ["Hanuman", "Jatayu", "Sugriva", "Vibhishana"],
@@ -89,25 +91,32 @@ function page() {
         }
       ]
 
-    const [quizNumber, setQuizNumber] = useState<number>(1);
+  ]
+
+
+    const [quizNumber, setQuizNumber] = useState<number>(0);
     const [currentQuestion, setCurrentQuestion] = useState<number>(1);
   
     useEffect( () => {
-        const min: number = 1;
-        const max: number = 100; 
+        const min: number = 0;
+        const max: number = 2; 
         const randomNumber: number = Math.floor(Math.random() * (max - min + 1)) + min;
         setQuizNumber(randomNumber);
+    }, [] )
+
+    useEffect( () => {
+      console.log("Value inside quizNumber: ", quizNumber);
     }, [] )
 
   return (
     <div className="min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-bodyBackground">
         <div className="min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-bodyBackground">
             {
-            quizNumber === 1
-                ? ( <> <Question /> </> ) // <ComponentForQuiz1 /> // JSX or function for quiz 1
-                : quizNumber === 2
-                ? ( <> <Question /> </> )  // <ComponentForQuiz2 /> // JSX or function for quiz 2
-                : ( <> <Question /> </> )  // <ComponentForOtherQuiz /> // JSX or function for any other quiz
+            quizNumber === 0
+                ? ( <> <Question quiz={quizzes[0]} /> </> ) 
+                : quizNumber === 1
+                ? ( <> <Question quiz={quizzes[1]} /> </> ) 
+                : ( <> <Question quiz={quizzes[2]} /> </> ) 
             }
         </div>
     </div>

@@ -5,7 +5,8 @@ import React, { useEffect, useState } from 'react'
 
 function page() {
 
-    const quiz4 = [
+    const quizzes = [
+      [
         {
           "question": "Who is considered the author of the *Mahabharata*?",
           "options": ["Vyasa", "Valmiki", "Tulsidas", "Kalidasa"],
@@ -31,9 +32,9 @@ function page() {
           "options": ["Karna", "Duryodhana", "Bhishma", "Shakuni"],
           "answer": "Duryodhana"
         }
-      ]
-    
-    const quiz5 = [
+      ],
+
+      [
         {
           "question": "Which character is known as the great archer of the Pandavas?",
           "options": ["Yudhishthira", "Bhima", "Arjuna", "Nakula"],
@@ -59,9 +60,9 @@ function page() {
           "options": ["Kurukshetra War", "Ramayana War", "Mahapadma War", "War of the Devas"],
           "answer": "Kurukshetra War"
         }
-      ]
-    
-    const quiz6 = [
+      ],
+
+      [
         {
           "question": "Who was the eldest son of the Kauravas?",
           "options": ["Dushasana", "Duryodhana", "Vikarna", "Dhrishtadyumna"],
@@ -88,6 +89,8 @@ function page() {
           "answer": "Kunti"
         }
       ]
+
+    ]
     
     const [quizNumber, setQuizNumber] = useState<number>(1);
     const [currentQuestion, setCurrentQuestion] = useState<number>(1);
@@ -103,10 +106,10 @@ function page() {
     <div className="min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-bodyBackground">
         {
         quizNumber === 1
-            ? ( <> <Question /> </> ) // <ComponentForQuiz1 /> // JSX or function for quiz 1
+            ? ( <> <Question quiz={quizzes[0]} /> </> ) // <ComponentForQuiz1 /> 
             : quizNumber === 2
-            ? ( <> <Question /> </> )  // <ComponentForQuiz2 /> // JSX or function for quiz 2
-            : ( <> <Question /> </> )  // <ComponentForOtherQuiz /> // JSX or function for any other quiz
+            ? ( <> <Question quiz={quizzes[1]} /> </> )  // <ComponentForQuiz2 />
+            : ( <> <Question quiz={quizzes[2]} /> </> )  // <ComponentForOtherQuiz />  
         }
     </div>
   )
