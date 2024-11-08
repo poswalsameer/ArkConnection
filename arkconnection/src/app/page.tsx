@@ -1,6 +1,10 @@
+import Courses from "./appComponents/Courses";
+import Email from "./appComponents/Email";
+import Footer from "./appComponents/Footer";
 import Hero from "./appComponents/Hero";
 import Navbar from "./appComponents/Navbar";
 import Quiz from "./appComponents/Quiz";
+import Testimonials from "./appComponents/Testimonials";
 
 export default function Home() {
   return (
@@ -10,6 +14,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Quiz />
+      <Courses />
+      <Testimonials />
+      <Email />
+      <Footer />
     </div>
 
   );
