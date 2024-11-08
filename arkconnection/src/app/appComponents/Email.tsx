@@ -21,7 +21,7 @@ function Email() {
 
         <div className='h-16 w-[70%] p-1 flex justify-center items-center bg-white rounded-full' >
 
-            <Input className=' h-full w-[70%] text-lg font-bold rounded-l-full bg-slate-200'
+            <Input className=' h-full w-[70%] text-black text-lg font-bold rounded-l-full bg-slate-200'
             placeholder='Enter your email'
             >
             </Input>

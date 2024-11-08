@@ -74,7 +74,10 @@ function Question({ quiz } : {quiz: quiz[]} ) {
     !loading ? 
     ( 
         <>
-            <div className="min-h-screen w-[95%] flex flex-col justify-center items-center bg-bodyBackground">
+            <div className="min-h-screen w-[95%] flex flex-col justify-center items-center 
+            
+            bg-bodyBackground
+            ">
 
                 <div className=' h-32 w-full flex justify-center items-center'>
                     <img src="../arkConnection-horizontal.png" alt="brandImage" className='h-96 w-96 '/>

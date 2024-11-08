@@ -103,7 +103,9 @@ function page() {
     }, [] )
 
   return (
-    <div className="min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-bodyBackground">
+    <div className="min-h-screen w-full flex flex-col gap-y-20 justify-center items-center 
+    
+    bg-bodyBackground">
         {
         quizNumber === 1
             ? ( <> <Question quiz={quizzes[0]} /> </> ) // <ComponentForQuiz1 /> 
