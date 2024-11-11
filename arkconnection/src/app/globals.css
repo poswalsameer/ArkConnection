@@ -15,6 +15,20 @@ body {
 
 }
 
+@media (max-width: 640px) {
+  #navbarDiv {
+    display: none;
+  }
+
+  #heroDiv{
+    margin-top: 20px;
+  }
+
+  #emailDivSmallText{
+    text-align: center;
+  }
+}
+
 @layer base {
   :root {
   

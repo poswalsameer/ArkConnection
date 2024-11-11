@@ -3,7 +3,7 @@ import React from "react";
 function Page() {
   return (
     <div
-      className="min-h-screen w-full flex flex-col justify-center items-center gap-y-20
+      className="min-h-screen w-full flex flex-col justify-center items-center gap-y-28
     
     bg-[#fdf0d5] 
     "
@@ -79,7 +79,7 @@ function Page() {
         </div>
 
         {/* OUR VISION */}
-        <div className="w-full flex flex-col justify-center gap-y-5">
+        <div className="mb-20 w-full flex flex-col justify-center gap-y-5">
             <div className="ml-10 text-4xl font-bold">Our Vision</div>
 
             <div className="text-xl mx-10 font-bold">
