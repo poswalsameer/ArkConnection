@@ -19,20 +19,20 @@ export default function Footer() {
 
                 <div className='flex flex-col justify-center items-start gap-y-1' >
 
-                    <div className=' flex justify-start gap-x-2 items-center hover:cursor-pointer'>
+                    <Link className=' flex justify-start gap-x-2 items-center hover:cursor-pointer' href="https://www.facebook.com/maharishikapi?mibextid=ZbWKwL">
                         <Facebook className='h-5 w-5'/>
                         <div className='text-base font-bold'>Facebook</div>
-                    </div>
+                    </Link>
 
-                    <div className='flex justify-start gap-x-2 items-center hover:cursor-pointer'>
+                    <Link className='flex justify-start gap-x-2 items-center hover:cursor-pointer' href="#">
                         <Instagram className='h-5 w-5'/>
                         <div className='text-base font-bold'>Instagram</div>
-                    </div>
+                    </Link>
 
-                    <div className='flex justify-start gap-x-2 items-center hover:cursor-pointer'>
+                    <Link className='flex justify-start gap-x-2 items-center hover:cursor-pointer' href='#'>
                         <Twitter className='h-5 w-5'/>
                         <div className='text-base font-bold'>Twitter</div>
-                    </div>
+                    </Link>
 
                 </div>
                 
@@ -84,12 +84,12 @@ export default function Footer() {
                 <div className='text-3xl my-2 font-extrabold text-red-500'>
                     Subscribe to us
                 </div>
-                <div className='flex justify-between gap-x-2 items-center'>
+                <Link className='flex justify-between gap-x-2 items-center' href="https://youtube.com/@Maharishikapi?si=qp2D3AGCOqzfy7gL" >
                     <Youtube className='h-14 w-14 text-red-500 transition-all delay-75 ease-linear hover:cursor-pointer hover:scale-105' />
                     <div className='text-2xl font-extrabold text-white'>
                         On Youtube
                     </div>
-                </div>
+                </Link>
                 
 
             </div>
