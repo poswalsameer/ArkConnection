@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
-function page() {    
+function Page() {    
     
     const router = useRouter();
 
@@ -126,4 +126,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

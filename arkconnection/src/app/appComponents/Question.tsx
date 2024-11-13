@@ -18,6 +18,7 @@ interface question {
 function Question({ quiz } : {quiz: quiz[]} ) {
 
     const [selected, setSelected] = useState<number | null>(null);
+    //@ts-ignore
     const [currentQuiz, setCurrentQuiz] = useState<quiz[]>([]);
     const [currentQuestion, setCurrentQuestion] = useState<question | null>(null);
     const [questionsAnswered, setQuestionsAnswered] = useState<number>(0);

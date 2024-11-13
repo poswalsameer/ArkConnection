@@ -3,7 +3,7 @@
 import Question from '@/app/appComponents/Question';
 import React, { useState, useEffect } from 'react'
 
-function page() {
+function Page() {
 
     const quizzes = [ 
 
@@ -95,7 +95,7 @@ function page() {
 
 
     const [quizNumber, setQuizNumber] = useState<number>(0);
-    const [currentQuestion, setCurrentQuestion] = useState<number>(1);
+    // const [currentQuestion, setCurrentQuestion] = useState<number>(1);
   
     useEffect( () => {
         const min: number = 0;
@@ -137,4 +137,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

@@ -13,7 +13,7 @@ function SingleService( {serviceImage, serviceName}: {serviceImage: string, serv
                 
                 {/* IMAGE */}
                 <div className=' 
-                h-2/3 w-full flex justify-center items-center border-b-2 border-black font-bold
+                h-2/3 w-full flex justify-center items-center border-b-2 border-black 
                 sm:h-2/3 sm:w-full sm:flex sm:justify-center sm:items-center sm:border-b-2 sm:border-black sm:font-bold
                 md:h-2/3 md:w-full md:flex md:justify-center md:items-center md:border-b-2 md:border-black md:font-bold
                 lg:h-2/3 lg:w-full lg:flex lg:justify-center lg:items-center lg:border-b-2 lg:border-black lg:font-bold

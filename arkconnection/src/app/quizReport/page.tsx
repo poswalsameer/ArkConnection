@@ -11,7 +11,7 @@ function QuizReport() {
     if (quizReportContext === null) {
         throw new Error('QuizReportContext must be used within a QuizReportContextProvider');
     }
-    const { correctAnswers, setCorrectAnswers } = quizReportContext;
+    const { correctAnswers } = quizReportContext;
 
     const router = useRouter();
 
