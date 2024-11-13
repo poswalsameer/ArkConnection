@@ -15,7 +15,7 @@ export default function Home() {
     md:min-h-screen md:w-full md:flex md:flex-col md:justify-center md:items-center md:bg-bodyBackground md:text-white
     lg:min-h-screen lg:w-full lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-bodyBackground lg:text-white
     xl:min-h-screen xl:w-full xl:flex xl:flex-col xl:justify-center xl:items-center xl:bg-bodyBackground xl:text-white
-    2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-bodyBackground 2xl:text-white">
+    2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-white 2xl:text-white">
       <div className="h-5 w-full"></div>
       <Navbar />
       <Hero />

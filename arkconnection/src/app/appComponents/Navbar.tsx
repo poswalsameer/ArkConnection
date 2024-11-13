@@ -20,7 +20,7 @@ function Navbar() {
     xl:mx-6 xl:h-20 xl:w-[95%] xl:flex xl:justify-between xl:items-center
     2xl:mx-6 2xl:h-20 2xl:w-[95%] 2xl:flex 2xl:justify-between 2xl:items-center
     
-    bg-[#ddbea9] text-[#344e41] rounded-full 
+    bg-[#dad7cd] bg-opacity-35 border border-gray-400 text-black rounded-full 
     '
     id='navbarDiv'
     >

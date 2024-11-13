@@ -11,7 +11,7 @@ function Hero() {
     xl:h-screen xl:w-full xl:flex xl:justify-between xl:items-center xl:gap-x-20
     2xl:h-screen 2xl:w-full 2xl:flex 2xl:justify-between 2xl:items-center 2xl:gap-x-20
     
-    bg-[#fdf0d5] 
+    bg-white 
     '
     id='heroDiv'
     >
@@ -57,9 +57,9 @@ function Hero() {
             md:max-w-xl md:flex md:justify-center md:items-center md:text-center md:text-3xl md:font-extrabold
             lg:max-w-xl lg:flex lg:justify-center lg:items-center lg:text-center lg:text-3xl lg:font-extrabold
             xl:max-w-xl xl:flex xl:justify-center xl:items-center xl:text-center xl:text-3xl xl:font-extrabold
-            2xl:max-w-xl 2xl:flex 2xl:justify-center 2xl:items-center 2xl:text-center 2xl:text-3xl 2xl:font-extrabold
+            2xl:max-w-2xl 2xl:flex 2xl:justify-center 2xl:items-center 2xl:text-center 2xl:text-5xl 2xl:font-extrabold
             
-            text-[#344e41] 
+            text-black 
             '>
                 Connecting Modern Minds with Ancient Wisdom
             </div>
@@ -69,9 +69,9 @@ function Hero() {
             md:max-w-xl md:text-base md:text-center
             lg:max-w-xl lg:text-base lg:text-center
             xl:max-w-xl xl:text-base xl:text-center
-            2xl:max-w-xl 2xl:text-base 2xl:text-center 
+            2xl:max-w-xl 2xl:text-lg 2xl:text-center 
             
-            text-[#cb997e] font-bold'>
+            text-[#b08968] font-bold'>
                 The spiritual and healing research work and service of the last nine generations of my family are my spiritual roots.
             </div>
             <Button className='
@@ -82,7 +82,7 @@ function Hero() {
             xl:mt-3 xl:h-12 xl:w-36 xl:text-base
             2xl:mt-3 2xl:h-12 2xl:w-36 2xl:text-base 
             
-            bg-[#344e41] hover:bg-[#3d5c4c] text-[#e6ccb2] font-bold rounded-full
+            bg-black text-[#e6ccb2] font-bold rounded-full
             '>
                 Chat Now
             </Button>
