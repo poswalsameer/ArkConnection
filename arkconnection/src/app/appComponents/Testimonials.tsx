@@ -1,26 +1,5 @@
 import React from 'react'
 
-// function SingleTestimonial(){
-//     return (
-
-//         <div className='h-80 w-64 p-2 flex flex-col gap-y-2 justify-center items-center rounded-lg
-        
-//         bg-[#b08968] hover:cursor-pointer transition-all delay-75 ease-linear hover:-translate-y-2' >
-            
-//             {/* IMAGE */}
-//             <div className='h-[28%] w-20 bg-black rounded-full'></div>
-
-//             {/* NAME AND DESIGNATION */}
-//             <div className='h-[20%] w-full bg-white rounded-lg' ></div>
-
-//             {/* TESTIMONIAL */}
-//             <div className='h-[50%] w-full bg-blue-400 rounded-lg ' ></div>
-
-//         </div>
-
-//     )
-// }
-
 function SingleService( {serviceImage, serviceName}: {serviceImage: string, serviceName: string} ){
 
     return (

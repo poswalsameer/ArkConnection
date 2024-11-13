@@ -2,7 +2,6 @@ import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import React, { useContext, useEffect, useState } from 'react'
 import QuizReportContext from '../context/QuizReportContext';
-import quizReportContext from '../context/QuizReportContext';
 
 interface quiz {
     question: string;
