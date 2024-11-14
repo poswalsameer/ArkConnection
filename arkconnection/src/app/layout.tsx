@@ -1,11 +1,17 @@
 import QuizReportContextProvider from "./context/quizReportContextProvider";
-import { Poppins } from 'next/font/google';
+import { Poppins, PT_Sans } from 'next/font/google';
 import "./globals.css";
 import type { Metadata } from "next";
 
 
-const poppins = Poppins({
-  weight: "300",
+// const poppins = Poppins({
+//   weight: "300",
+//   style: "normal",
+//   subsets: ["latin"],
+// })
+
+const PTSans = PT_Sans({
+  weight: "400",
   style: "normal",
   subsets: ["latin"],
 })
@@ -24,7 +30,7 @@ export default function RootLayout({
     <QuizReportContextProvider>
     <html lang="en">
       <body
-        className={poppins.className}
+        className={PTSans.className}
       >
         {children}
       </body>

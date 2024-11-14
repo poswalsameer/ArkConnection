@@ -15,7 +15,7 @@ function Quiz() {
     md:my-5 md:h-[30rem] md:w-[95%] md:flex md:flex-col md:gap-y-5 md:justify-center md:items-center md:relative
     lg:my-5 lg:h-[30rem] lg:w-[95%] lg:flex lg:flex-col lg:gap-y-5 lg:justify-center lg:items-center lg:relative
     xl:my-5 xl:h-[30rem] xl:w-[95%] xl:flex xl:flex-col xl:gap-y-5 xl:justify-center xl:items-center xl:relative 
-    2xl:my-5 2xl:h-[30rem] 2xl:w-[95%] 2xl:flex 2xl:flex-col 2xl:gap-y-5 2xl:justify-center 2xl:items-center 2xl:relative 
+    mx-6 2xl:my-5 2xl:h-[30rem] 2xl:w-[95%] 2xl:flex 2xl:flex-col 2xl:gap-y-5   2xl:justify-center 2xl:items-center 2xl:relative 
     rounded-lg
     ' id='quizSectionDiv' >
 

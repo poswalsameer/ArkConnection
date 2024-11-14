@@ -22,12 +22,12 @@ function QuizReport() {
   return (
 
     <div className="
-    min-h-screen w-[100%] flex flex-col justify-center items-center bg-bodyBackground
-    sm:min-h-screen sm:w-[100%] sm:flex sm:flex-col sm:justify-center sm:items-center sm:bg-bodyBackground
-    md:min-h-screen md:w-[100%] md:flex md:flex-col md:justify-center md:items-center md:bg-bodyBackground
-    lg:min-h-screen lg:w-[100%] lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-bodyBackground
-    xl:min-h-screen xl:w-[100%] xl:flex xl:flex-col xl:justify-center xl:items-center xl:bg-bodyBackground
-    2xl:min-h-screen 2xl:w-[100%] 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-bodyBackground">
+    min-h-screen w-[100%] flex flex-col justify-center items-center bg-white
+    sm:min-h-screen sm:w-[100%] sm:flex sm:flex-col sm:justify-center sm:items-center 
+    md:min-h-screen md:w-[100%] md:flex md:flex-col md:justify-center md:items-center
+    lg:min-h-screen lg:w-[100%] lg:flex lg:flex-col lg:justify-center lg:items-center 
+    xl:min-h-screen xl:w-[100%] xl:flex xl:flex-col xl:justify-center xl:items-center
+    2xl:min-h-screen 2xl:w-[100%] 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center">
 
         <div className=' 
         h-32 w-full flex justify-center items-center
@@ -57,12 +57,12 @@ function QuizReport() {
         </div>
         
         <Button className="
-        h-12 w-36 text-base bg-[#344e41] hover:bg-[#3d5c4c] rounded-full text-[#e6ccb2] font-bold
-        sm:h-12 sm:w-36 sm:text-base sm:bg-[#344e41] sm:hover:bg-[#3d5c4c] sm:rounded-full sm:text-[#e6ccb2] sm:font-bold
-        md:h-12 md:w-36 md:text-base md:bg-[#344e41] md:hover:bg-[#3d5c4c] md:rounded-full md:text-[#e6ccb2] md:font-bold
-        lg:h-12 lg:w-36 lg:text-base lg:bg-[#344e41] lg:hover:bg-[#3d5c4c] lg:rounded-full lg:text-[#e6ccb2] lg:font-bold
-        xl:h-12 xl:w-36 xl:text-base xl:bg-[#344e41] xl:hover:bg-[#3d5c4c] xl:rounded-full xl:text-[#e6ccb2] xl:font-bold
-        2xl:h-12 2xl:w-36 2xl:text-base 2xl:bg-[#344e41] 2xl:hover:bg-[#3d5c4c] 2xl:rounded-full 2xl:text-[#e6ccb2] 2xl:font-bold" 
+        h-12 w-36 text-base bg-[#6a7486]  rounded-full text-white font-bold
+        sm:h-12 sm:w-36 sm:text-base  sm:font-bold
+        md:h-12 md:w-36 md:text-base md:font-bold
+        lg:h-12 lg:w-36 lg:text-base lg:font-bold
+        xl:h-12 xl:w-36 xl:text-base xl:font-bold
+        2xl:h-12 2xl:w-36 2xl:text-base 2xl:font-bold" 
         onClick={goBackToHomePage}
         >
             Home

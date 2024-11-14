@@ -19,12 +19,12 @@ function Page() {
 
     
     <div className="
-    min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-bodyBackground text-white
-    sm:min-h-screen sm:w-full sm:flex sm:flex-col sm:gap-y-20 sm:justify-center sm:items-center sm:bg-bodyBackground sm:text-white
-    md:min-h-screen md:w-full md:flex md:flex-col md:gap-y-20 md:justify-center md:items-center md:bg-bodyBackground md:text-white
-    lg:min-h-screen lg:w-full lg:flex lg:flex-col lg:gap-y-20 lg:justify-center lg:items-center lg:bg-bodyBackground lg:text-white
-    xl:min-h-screen xl:w-full xl:flex xl:flex-col xl:gap-y-20 xl:justify-center xl:items-center xl:bg-bodyBackground xl:text-white
-    2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:gap-y-20 2xl:justify-center 2xl:items-center 2xl:bg-bodyBackground 2xl:text-white
+    min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-white text-white
+    sm:min-h-screen sm:w-full sm:flex sm:flex-col sm:gap-y-20 sm:justify-center sm:items-center sm:text-white
+    md:min-h-screen md:w-full md:flex md:flex-col md:gap-y-20 md:justify-center md:items-center  md:text-white
+    lg:min-h-screen lg:w-full lg:flex lg:flex-col lg:gap-y-20 lg:justify-center lg:items-center lg:text-white
+    xl:min-h-screen xl:w-full xl:flex xl:flex-col xl:gap-y-20 xl:justify-center xl:items-center  xl:text-white
+    2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:gap-y-20 2xl:justify-center 2xl:items-center  2xl:text-white
     ">
             <div className=' 
             h-[20%] flex justify-center items-center text-center text-2xl
@@ -32,9 +32,9 @@ function Page() {
             md:h-[20%] md:flex md:justify-center md:items-center md:text-center md:text-3xl
             lg:h-[20%] lg:flex lg:justify-center lg:items-center lg:text-center lg:text-3xl
             xl:h-[20%] xl:flex xl:justify-center xl:items-center xl:text-center xl:text-3xl
-            2xl:h-[20%] 2xl:flex 2xl:justify-center 2xl:items-center 2xl:text-center 2xl:text-3xl 
+            2xl:h-[20%] 2xl:flex 2xl:justify-center 2xl:items-center 2xl:text-center 2xl:text-4xl 
             
-            text-[#344e41] font-extrabold'>
+            text-black font-extrabold'>
                 Select any one quiz you would like to give?
             </div>
 
@@ -68,7 +68,7 @@ function Page() {
                     2xl:h-[30rem] 2xl:w-full 2xl:rounded-lg 2xl:border-4
                     
                     
-                    transition-all border-[#b08968]'/>
+                    transition-all border-[#525e71]'/>
                     <div className="
                     absolute top-8 inset-0 flex justify-center items-start text-3xl z-30
                     sm:absolute sm:top-8 sm:inset-0 sm:flex sm:justify-center sm:items-start sm:text-3xl sm:z-30
@@ -104,7 +104,7 @@ function Page() {
                     xl:h-[30rem] xl:w-full xl:rounded-lg xl:border-4
                     2xl:h-[30rem] 2xl:w-full 2xl:rounded-lg 2xl:border-4 
                     
-                    border-[#b08968]'/>
+                    border-[#525e71]'/>
                     <div className="
                     absolute top-8 inset-0 flex justify-center items-start text-3xl z-30
                     sm:absolute sm:top-8 sm:inset-0 sm:flex sm:justify-center sm:items-start sm:text-3xl sm:z-30

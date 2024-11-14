@@ -5,12 +5,12 @@ import React from 'react'
 function Email() {
   return (
     <div className='
-    h-56 w-[80%] my-20 bg-[#344e41] flex flex-col justify-between items-center rounded-lg 
-    sm:h-32 sm:w-[80%] sm:my-20 sm:bg-[#344e41] sm:flex sm:flex-row sm:justify-between sm:items-center sm:rounded-lg 
-    md:h-32 md:w-[80%] md:my-20 md:bg-[#344e41] md:flex md:justify-between md:items-center md:rounded-lg
-    lg:h-32 lg:w-[80%] lg:my-20 lg:bg-[#344e41] lg:flex lg:justify-between lg:items-center lg:rounded-lg
-    xl:h-32 xl:w-[80%] xl:my-20 xl:bg-[#344e41] xl:flex xl:justify-between xl:items-center xl:rounded-lg
-    2xl:h-32 2xl:w-[80%] 2xl:my-20 2xl:bg-[#344e41] 2xl:flex 2xl:justify-between 2xl:items-center 2xl:rounded-lg ' >    
+    h-56 w-[90%] my-20 bg-[#edf6f9] flex flex-col justify-between items-center rounded-lg 
+    sm:h-32 sm:w-[80%] sm:my-20 sm:bg-[#edf2f4] sm:flex sm:flex-row sm:justify-between sm:items-center sm:rounded-lg 
+    md:h-32 md:w-[80%] md:my-20 md:bg-[#edf2f4] md:flex md:justify-between md:items-center md:rounded-lg
+    lg:h-32 lg:w-[80%] lg:my-20 lg:bg-[#edf2f4] lg:flex lg:justify-between lg:items-center lg:rounded-lg
+    xl:h-32 xl:w-[90%] xl:my-20 xl:bg-[#edf2f4] xl:flex xl:justify-between xl:items-center xl:rounded-lg
+    2xl:h-32 2xl:w-[90%] 2xl:my-20 2xl:bg-[#edf2f4] 2xl:flex 2xl:justify-between 2xl:items-center 2xl:rounded-lg ' >    
 
     {/* LEFT PART */}
     <div className='
@@ -21,7 +21,7 @@ function Email() {
     xl:h-full xl:w-1/2 xl:ml-10 xl:flex xl:flex-col xl:gap-y-1 xl:justify-center xl:items-start
     2xl:h-full 2xl:w-1/2 2xl:ml-10 2xl:flex 2xl:flex-col 2xl:gap-y-1 2xl:justify-center 2xl:items-start '>
         <div className='
-        text-xl font-extrabold
+        text-xl font-extrabold text-black
         sm:text-xl sm:font-extrabold
         md:text-2xl md:font-extrabold
         lg:text-3xl lg:font-extrabold
@@ -30,12 +30,12 @@ function Email() {
             Want to join us?
         </div>
         <div className='
-        text-sm font-bold text-[#fdf0d5]
-        sm:text-sm sm:font-bold sm:text-[#fdf0d5]
-        md:text-base md:font-bold md:text-[#fdf0d5]
-        lg:text-base lg:font-bold lg:text-[#fdf0d5]
-        xl:text-base xl:font-bold xl:text-[#fdf0d5]
-        2xl:text-base 2xl:font-bold 2xl:text-[#fdf0d5]'
+        text-sm font-bold text-[#8d99ae]
+        sm:text-sm sm:font-bold sm:text-[#8d99ae]
+        md:text-base md:font-bold md:text-[#8d99ae]
+        lg:text-base lg:font-bold lg:text-[#8d99ae]
+        xl:text-base xl:font-bold xl:text-[#8d99ae]
+        2xl:text-base 2xl:font-bold 2xl:text-[#8d99ae]'
         
         id='emailDivSmallText'
         >
@@ -53,12 +53,12 @@ function Email() {
     2xl:h-full 2xl:w-1/2 2xl:mr-10 2xl:flex 2xl:justify-end 2xl:items-center '>
 
         <div className='
-        h-16 w-[70%] p-1 flex justify-center items-center bg-white rounded-full
-        sm:h-16 sm:w-[70%] sm:p-1 sm:flex sm:justify-center sm:items-center sm:bg-white sm:rounded-full
-        md:h-16 md:w-[70%] md:p-1 md:flex md:justify-center md:items-center md:bg-white md:rounded-full
-        lg:h-16 lg:w-[70%] lg:p-1 lg:flex lg:justify-center lg:items-center lg:bg-white lg:rounded-full
-        xl:h-16 xl:w-[70%] xl:p-1 xl:flex xl:justify-center xl:items-center xl:bg-white xl:rounded-full
-        2xl:h-16 2xl:w-[70%] 2xl:p-1 2xl:flex 2xl:justify-center 2xl:items-center 2xl:bg-white 2xl:rounded-full' >
+        h-16 w-[70%] p-1 flex justify-center items-center bg-[#8d99ae] rounded-full
+        sm:h-16 sm:w-[70%] sm:p-1 sm:flex sm:justify-center sm:items-center sm:bg-[#8d99ae]  sm:rounded-full
+        md:h-16 md:w-[70%] md:p-1 md:flex md:justify-center md:items-center md:bg-[#8d99ae]  md:rounded-full
+        lg:h-16 lg:w-[70%] lg:p-1 lg:flex lg:justify-center lg:items-center lg:bg-[#8d99ae]  lg:rounded-full
+        xl:h-16 xl:w-[70%] xl:p-1 xl:flex xl:justify-center xl:items-center xl:bg-[#8d99ae]  xl:rounded-full
+        2xl:h-16 2xl:w-[80%] 2xl:p-1 2xl:flex 2xl:justify-center 2xl:items-center 2xl:bg-[#8d99ae] 2xl:rounded-full' >
 
             <Input className=' 
             h-full w-[80%] text-black text-sm font-bold rounded-l-full bg-slate-200
@@ -71,12 +71,12 @@ function Email() {
             >
             </Input>
             <Button className='
-            h-full w-[30%] text-sm font-bold rounded-r-full bg-[#b08968] hover:bg-[#906e52]
-            sm:h-full sm:w-[30%] sm:text-sm sm:font-bold sm:rounded-r-full sm:bg-[#b08968] sm:hover:bg-[#906e52]
-            md:h-full md:w-[30%] md:text-sm md:font-bold md:rounded-r-full md:bg-[#b08968] md:hover:bg-[#906e52]
-            lg:h-full lg:w-[30%] lg:text-lg lg:font-bold lg:rounded-r-full lg:bg-[#b08968] lg:hover:bg-[#906e52]
-            xl:h-full xl:w-[30%] xl:text-lg xl:font-bold xl:rounded-r-full xl:bg-[#b08968] xl:hover:bg-[#906e52]
-            2xl:h-full 2xl:w-[30%] 2xl:text-lg 2xl:font-bold 2xl:rounded-r-full 2xl:bg-[#b08968] 2xl:hover:bg-[#906e52] '>
+            h-full w-[30%] text-sm font-bold rounded-r-full bg-[#8d99ae] hover:bg-[#9facc1]
+            sm:h-full sm:w-[30%] sm:text-sm sm:font-bold sm:rounded-r-full sm:bg-[#8d99ae] sm:hover:bg-[#9facc1]
+            md:h-full md:w-[30%] md:text-sm md:font-bold md:rounded-r-full md:bg-[#8d99ae] md:hover:bg-[#9facc1]
+            lg:h-full lg:w-[30%] lg:text-lg lg:font-bold lg:rounded-r-full lg:bg-[#8d99ae] lg:hover:bg-[#9facc1]
+            xl:h-full xl:w-[30%] xl:text-lg xl:font-bold xl:rounded-r-full xl:bg-[#8d99ae] xl:hover:bg-[#9facc1]
+            2xl:h-full 2xl:w-[30%] 2xl:text-lg 2xl:font-bold 2xl:rounded-r-full 2xl:bg-[#8d99ae] 2xl:hover:bg-[#9facc1] '>
                 Join
             </Button>
 

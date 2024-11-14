@@ -110,20 +110,20 @@ function Page() {
 
   return (
     <div className="
-    min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-bodyBackground
-    sm:min-h-screen sm:w-full sm:flex sm:flex-col sm:gap-y-20 sm:justify-center sm:items-center sm:bg-bodyBackground
-    md:min-h-screen md:w-full md:flex md:flex-col md:gap-y-20 md:justify-center md:items-center md:bg-bodyBackground
-    lg:min-h-screen lg:w-full lg:flex lg:flex-col lg:gap-y-20 lg:justify-center lg:items-center lg:bg-bodyBackground
-    xl:min-h-screen xl:w-full xl:flex xl:flex-col xl:gap-y-20 xl:justify-center xl:items-center xl:bg-bodyBackground
-    2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:gap-y-20 2xl:justify-center 2xl:items-center 2xl:bg-bodyBackground
+    min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-white
+    sm:min-h-screen sm:w-full sm:flex sm:flex-col sm:gap-y-20 sm:justify-center sm:items-center 
+    md:min-h-screen md:w-full md:flex md:flex-col md:gap-y-20 md:justify-center md:items-center 
+    lg:min-h-screen lg:w-full lg:flex lg:flex-col lg:gap-y-20 lg:justify-center lg:items-center 
+    xl:min-h-screen xl:w-full xl:flex xl:flex-col xl:gap-y-20 xl:justify-center xl:items-center 
+    2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:gap-y-20 2xl:justify-center 2xl:items-center 
     ">
         <div className="
-        min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-bodyBackground
-        sm:min-h-screen sm:w-full sm:flex sm:flex-col sm:gap-y-20 sm:justify-center sm:items-center sm:bg-bodyBackground
-        md:min-h-screen md:w-full md:flex md:flex-col md:gap-y-20 md:justify-center md:items-center md:bg-bodyBackground
-        lg:min-h-screen lg:w-full lg:flex lg:flex-col lg:gap-y-20 lg:justify-center lg:items-center lg:bg-bodyBackground
-        xl:min-h-screen xl:w-full xl:flex xl:flex-col xl:gap-y-20 xl:justify-center xl:items-center xl:bg-bodyBackground
-        2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:gap-y-20 2xl:justify-center 2xl:items-center 2xl:bg-bodyBackground
+        min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-white
+        sm:min-h-screen sm:w-full sm:flex sm:flex-col sm:gap-y-20 sm:justify-center sm:items-center 
+        md:min-h-screen md:w-full md:flex md:flex-col md:gap-y-20 md:justify-center md:items-center 
+        lg:min-h-screen lg:w-full lg:flex lg:flex-col lg:gap-y-20 lg:justify-center lg:items-center 
+        xl:min-h-screen xl:w-full xl:flex xl:flex-col xl:gap-y-20 xl:justify-center xl:items-center 
+        2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:gap-y-20 2xl:justify-center 2xl:items-center
         ">
             {
             quizNumber === 0

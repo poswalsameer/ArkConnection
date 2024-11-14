@@ -16,7 +16,11 @@ body {
 }
 
 @media (max-width: 640px) {
-  #navbarDiv {
+  /* #navbarDiv {
+    display: none;
+  } */
+
+  #heroImageDiv{
     display: none;
   }
 
