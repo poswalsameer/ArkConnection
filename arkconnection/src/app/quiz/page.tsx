@@ -2,6 +2,8 @@
 
 import { useRouter } from 'next/navigation'
 import React from 'react'
+import Footer from '../appComponents/Footer';
+import Navbar from '../appComponents/Navbar';
 
 function Page() {    
     
@@ -17,7 +19,7 @@ function Page() {
 
   return (
 
-    
+   <> 
     <div className="
     min-h-screen w-full flex flex-col gap-y-20 justify-center items-center bg-white text-white
     sm:min-h-screen sm:w-full sm:flex sm:flex-col sm:gap-y-20 sm:justify-center sm:items-center sm:text-white
@@ -26,6 +28,8 @@ function Page() {
     xl:min-h-screen xl:w-full xl:flex xl:flex-col xl:gap-y-20 xl:justify-center xl:items-center  xl:text-white
     2xl:min-h-screen 2xl:w-full 2xl:flex 2xl:flex-col 2xl:gap-y-20 2xl:justify-center 2xl:items-center  2xl:text-white
     ">
+      <Navbar/>
+
             <div className=' 
             h-[20%] flex justify-center items-center text-center text-2xl
             sm:h-[20%] sm:flex sm:justify-center sm:items-center sm:text-center sm:text-2xl
@@ -122,7 +126,9 @@ function Page() {
             </div>
 
     </div>
-    
+    <Footer />
+
+   </>
   )
 }
 

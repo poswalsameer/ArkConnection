@@ -19,12 +19,13 @@ function SingleService( {serviceImage, serviceName}: {serviceImage: string, serv
                 lg:h-2/3 lg:w-full lg:flex lg:justify-center lg:items-center lg:font-bold
                 xl:h-2/3 xl:w-full xl:flex xl:justify-center xl:items-center xl:font-bold
                 2xl:h-2/3 2xl:w-full 2xl:flex 2xl:justify-center 2xl:items-center  
-                
+                shadow-lg
+                rounded-lg
                 font-bold
                 '>
                     <img src={serviceImage} alt="" 
                     className='
-                    h-full w-full rounded-lg border-2 border-black
+                    h-full w-full rounded-lg border-2 
                     sm:h-full sm:w-full sm:rounded-lg
                     md:h-full md:w-full md:rounded-lg
                     lg:h-full lg:w-full lg:rounded-lg

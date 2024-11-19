@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Courses from "./appComponents/Courses";
 import Email from "./appComponents/Email";
 import Footer from "./appComponents/Footer";
@@ -20,12 +21,13 @@ export default function Home() {
       <div className="h-5 w-full"></div>
       <Navbar />
       <Hero />
-      <Quiz />
-      <Courses />
       <Testimonials />
-      <Planets />
+      <Courses />
+      <Quiz />
       <Email />
+      {/* <Planets /> */}
       <Footer />
+      
     </div>
 
   );

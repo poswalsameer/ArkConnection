@@ -13,6 +13,8 @@ function SingleCourse( {courseImage, courseName}: {courseImage: string, courseNa
                 
                 {/* IMAGE */}
                 <div className=' 
+                  shadow-lg
+                  rounded-lg
                 h-2/3 w-full flex justify-center items-center font-bold
                 sm:h-2/3 sm:w-full sm:flex sm:justify-center sm:items-center sm:font-bold
                 md:h-2/3 md:w-full md:flex md:justify-center md:items-center md:font-bold
@@ -22,7 +24,7 @@ function SingleCourse( {courseImage, courseName}: {courseImage: string, courseNa
                 '>
                     <img src={courseImage} alt="" 
                     className='
-                    h-full w-full rounded-lg border-2 border-black
+                    h-full w-full rounded-lg border-2
                     sm:h-full sm:w-full sm:rounded-lg
                     md:h-full md:w-full md:rounded-lg
                     lg:h-full lg:w-full lg:rounded-lg
@@ -56,12 +58,12 @@ function Courses() {
   return (
 
     <div className='
-    h-full max-w-[70rem] my-20 flex flex-col gap-y-10 justify-center items-center
-    sm:h-full sm:max-w-[70rem] sm:my-20 sm:flex sm:flex-col sm:gap-y-10 sm:justify-center sm:items-center
-    md:h-full md:max-w-[70rem] md:my-20 md:flex md:flex-col md:gap-y-10 md:justify-center md:items-center
-    lg:h-full lg:max-w-[70rem] lg:my-20 lg:flex lg:flex-col lg:gap-y-10 lg:justify-center lg:items-center
-    xl:h-full xl:max-w-[70rem] xl:my-20 xl:flex xl:flex-col xl:gap-y-10 xl:justify-center xl:items-center
-    2xl:h-full 2xl:max-w-[70rem] 2xl:my-20 2xl:flex 2xl:flex-col 2xl:gap-y-10 2xl:justify-center 2xl:items-center '>
+    h-full max-w-[70rem] my-10 flex flex-col gap-y-10 justify-center items-center
+    sm:h-full sm:max-w-[70rem] sm:my-10 sm:flex sm:flex-col sm:gap-y-10 sm:justify-center sm:items-center
+    md:h-full md:max-w-[70rem] md:my-10 md:flex md:flex-col md:gap-y-10 md:justify-center md:items-center
+    lg:h-full lg:max-w-[70rem] lg:my-10 lg:flex lg:flex-col lg:gap-y-10 lg:justify-center lg:items-center
+    xl:h-full xl:max-w-[70rem] xl:my-10 xl:flex xl:flex-col xl:gap-y-10 xl:justify-center xl:items-center
+    2xl:h-full 2xl:max-w-[70rem] 2xl:my-10 2xl:flex 2xl:flex-col 2xl:gap-y-10 2xl:justify-center 2xl:items-center '>
 
         <div className=' 
         text-2xl font-extrabold

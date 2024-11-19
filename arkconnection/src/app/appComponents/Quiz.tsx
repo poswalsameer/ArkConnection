@@ -49,7 +49,9 @@ function Quiz() {
         lg:relative lg:z-10 lg:mt-3 lg:h-12 lg:w-36 lg:text-base
         xl:relative xl:z-10 xl:mt-3 xl:h-12 xl:w-36 xl:text-base
         2xl:relative 2xl:z-10 2xl:mt-3 2xl:h-12 2xl:w-36 2xl:text-base  
-        
+       hover:scale-105
+      transition-all
+     duration-300 
         font-bold bg-black rounded-full text-[#e6ccb2]
         "
         onClick={() => (router.push("/quiz"))}

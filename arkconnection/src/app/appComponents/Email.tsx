@@ -71,6 +71,8 @@ function Email() {
             >
             </Input>
             <Button className='
+             transition-all
+            duration-300 
             h-full w-[30%] text-sm font-bold rounded-r-full bg-[#8d99ae] hover:bg-[#9facc1]
             sm:h-full sm:w-[30%] sm:text-sm sm:font-bold sm:rounded-r-full sm:bg-[#8d99ae] sm:hover:bg-[#9facc1]
             md:h-full md:w-[30%] md:text-sm md:font-bold md:rounded-r-full md:bg-[#8d99ae] md:hover:bg-[#9facc1]
