@@ -16,16 +16,20 @@ function Navbar() {
     router.push("/");
   }
 
+  const routeToContactPage = () => {
+    router.push("/contact");
+  }
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
   const navItems = [
     { name: 'Home', onClick: routeToHomePage },
-    { name: 'About us', onClick: routeToAboutPage },
+    { name: 'About', onClick: routeToAboutPage },
     { name: 'Courses', onClick: () => {} },
     { name: 'Services', onClick: () => {} },
-    { name: 'Contact', onClick: () => {} },
+    { name: 'Contact', onClick: routeToContactPage },
   ]
 
   return (

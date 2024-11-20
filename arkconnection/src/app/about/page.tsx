@@ -29,7 +29,7 @@ function Page() {
           xl:mx-6 xl:h-20 xl:w-[95%] xl:flex xl:justify-center xl:items-center xl:text-center
           xl:mt-20 xl:text-4xl xl:font-bold
           2xl:mx-6 2xl:h-20 2xl:w-[95%] 2xl:flex 2xl:justify-center 2xl:items-center 2xl:text-center
-          2xl:mt-20 2xl:text-4xl 2xl:font-bold"
+          2xl:mt-20 2xl:text-5xl 2xl:font-bold"
         >
           Gurukul reaching to your doorstep Restoring Guru Shishya Parampara
         </div>
@@ -92,7 +92,7 @@ function Page() {
             md:text-xl md:text-[#525e71] md:text-center md:font-semibold
             lg:text-xl lg:text-[#525e71] lg:text-center lg:font-semibold
             xl:text-xl xl:text-[#525e71] xl:text-center xl:font-semibold
-            2xl:text-xl 2xl:text-[#525e71] 2xl:text-center 2xl:font-semibold"
+            2xl:text-2xl 2xl:text-[#525e71] 2xl:text-center 2xl:font-semibold"
             >
               This is an Institution of higher learning in the field of
               Vedic-Studies and other Traditional Shastras. The words Astronomy
@@ -112,7 +112,10 @@ function Page() {
           md:mx-10 md:text-lg md:font-bold md:flex md:flex-col md:gap-y-4
           lg:mx-10 lg:text-lg lg:font-bold lg:flex lg:flex-col lg:gap-y-4
           xl:mx-10 xl:text-lg xl:font-bold xl:flex xl:flex-col xl:gap-y-4
-          2xl:mx-10 2xl:text-lg 2xl:font-bold 2xl:flex 2xl:flex-col 2xl:gap-y-4"
+          2xl:mx-10 2xl:text-2xl 2xl:font-bold 2xl:flex 2xl:flex-col 2xl:gap-y-4
+          
+          
+          "
         >
           <p>
             The concept of Astrology has emerged from the belief and the faith
@@ -200,7 +203,7 @@ function Page() {
               md:ml-10 md:text-4xl   md:font-bold
               lg:ml-10 lg:text-4xl  lg:font-bold
               xl:ml-10 xl:text-4xl  xl:font-bold
-              2xl:ml-10 2xl:text-4xl 2xl:font-bold"
+              2xl:ml-10 2xl:text-5xl 2xl:font-bold"
           >
             Our Mission
           </div>
@@ -212,7 +215,7 @@ function Page() {
               md:text-xl md:ml-10  md:font-bold
               lg:text-xl lg:ml-10 lg:font-bold
               xl:text-xl xl:ml-10  xl:font-bold
-              2xl:text-xl 2xl:ml-10 2xl:font-bold"
+              2xl:text-2xl 2xl:ml-10 2xl:font-bold"
           >
             <p>To impart education in Vedic Science in the modern context.</p>
             <p>
@@ -249,7 +252,7 @@ function Page() {
               md:ml-10 md:text-4xl  md:font-bold
               lg:ml-10 lg:text-4xl  lg:font-bold
               xl:ml-10 xl:text-4xl xl:font-bold
-              2xl:ml-10 2xl:text-4xl 2xl:font-bold"
+              2xl:ml-10 2xl:text-5xl 2xl:font-bold"
           >
             Our Vision
           </div>
@@ -261,7 +264,7 @@ function Page() {
               md:text-xl md:mx-10 md:font-bold
               lg:text-xl lg:mx-10 lg:font-bold
               xl:text-xl xl:mx-10  xl:font-bold
-              2xl:text-xl 2xl:mx-10  2xl:font-bold"
+              2xl:text-2xl 2xl:mx-10  2xl:font-bold"
           >
             To establish Spiritual well-being through Vedic Knowledge, a high
             level of faith, like through Vedas Yoga etc., and to create
