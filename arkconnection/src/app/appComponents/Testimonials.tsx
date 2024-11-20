@@ -1,6 +1,17 @@
+'use client'
+
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
-function SingleService( {serviceImage, serviceName}: {serviceImage: string, serviceName: string} ){
+function SingleService( {serviceImage, serviceName, slugName, divIndex}: {serviceImage: string, serviceName: string, slugName: string, divIndex: number} ){
+
+    const router = useRouter();
+
+    const routeToService = () => {
+        if( divIndex === 0 ){
+            router.push("/services/Finding-Shubh-Muhurta");
+        }
+    } 
 
     return (
         <div className=' 
@@ -9,7 +20,10 @@ function SingleService( {serviceImage, serviceName}: {serviceImage: string, serv
         md:h-52 md:w-52 md:flex md:flex-col md:justify-center md:items-center md:rounded-lg md:transition-all md:delay-75 md:ease-linear md:hover:cursor-pointer md:hover:-translate-y-2
         lg:h-72 lg:w-72 lg:flex lg:flex-col lg:justify-center lg:items-center lg:rounded-lg lg:transition-all lg:delay-75 lg:ease-linear lg:hover:cursor-pointer lg:hover:-translate-y-2
         xl:h-96 xl:w-96 xl:flex xl:flex-col xl:justify-center xl:items-center xl:rounded-lg xl:transition-all xl:delay-75 xl:ease-linear xl:hover:cursor-pointer xl:hover:-translate-y-2
-        2xl:h-96 2xl:w-96 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:rounded-lg 2xl:transition-all 2xl:delay-75 2xl:ease-linear 2xl:hover:cursor-pointer 2xl:hover:-translate-y-2'>
+        2xl:h-96 2xl:w-96 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:rounded-lg 2xl:transition-all 2xl:delay-75 2xl:ease-linear 2xl:hover:cursor-pointer 2xl:hover:-translate-y-2'
+        
+        onClick={routeToService}
+        >
                 
                 {/* IMAGE */}
                 <div className=' 
@@ -71,6 +85,15 @@ function Testimonials() {
         "90-Minutes Astrology Consultation"
     ]
 
+    const slugName = [
+        "Finding-Shubh-Muhurta",
+        "Medical-Analysis",
+        "Birth-Chart",
+        "Vastu-Consultation",
+        "Maharishi-Kapi-Business-Retainer-Plan",
+        "90-Minutes-Astrology-Consultation"
+    ]
+
   return (
     <div className='
     h-full max-w-[70rem] my-20 flex flex-col gap-y-10 justify-center items-center
@@ -100,7 +123,7 @@ function Testimonials() {
         xl:h-full xl:w-full xl:grid xl:grid-cols-3 xl:gap-y-10 xl:gap-x-20 xl:place-content-center xl:place-items-center
         2xl:h-full 2xl:w-full 2xl:grid 2xl:grid-cols-3 2xl:gap-y-10 2xl:gap-x-10 2xl:place-content-center 2xl:place-items-center'>
             {Array.from({ length: 6 }).map((_, index) => (
-                <SingleService key={index} serviceImage={images[index]} serviceName={serviceName[index]} />
+                <SingleService key={index} serviceImage={images[index]} serviceName={serviceName[index]} slugName={slugName[index]} divIndex={index} />
             ))}
         </div>
       

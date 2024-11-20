@@ -20,6 +20,10 @@ function Navbar() {
     router.push("/contact");
   }
 
+  const routeToServicesPage = () => {
+    router.push("/services")
+  }
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
@@ -28,7 +32,7 @@ function Navbar() {
     { name: 'Home', onClick: routeToHomePage },
     { name: 'About', onClick: routeToAboutPage },
     { name: 'Courses', onClick: () => {} },
-    { name: 'Services', onClick: () => {} },
+    { name: 'Services', onClick: routeToServicesPage },
     { name: 'Contact', onClick: routeToContactPage },
   ]
 

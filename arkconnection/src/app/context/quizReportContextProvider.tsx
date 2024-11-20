@@ -5,7 +5,7 @@ import QuizReportContext from './QuizReportContext'
 
 function QuizReportContextProvider( {children}: {children: React.ReactNode} ) {
 
-    const [ correctAnswers, setCorrectAnswers ] = useState(0);
+    const [ correctAnswers, setCorrectAnswers ] = useState<number>(0);
 
   return (
     <QuizReportContext.Provider value={{correctAnswers, setCorrectAnswers}}>
