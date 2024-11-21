@@ -1,9 +1,31 @@
+'use client'
+
 import Footer from "@/app/appComponents/Footer";
 import Navbar from "@/app/appComponents/Navbar";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import React from "react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import React, { useState } from "react";
 
 function Page() {
+
+  const [age, setAge] = useState('')
+
+  const calculateAge = (dob: string) => {
+    const birthDate = new Date(dob)
+    const today = new Date()
+    let age = today.getFullYear() - birthDate.getFullYear()
+    const monthDiff = today.getMonth() - birthDate.getMonth()
+    
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--
+    }
+    
+    setAge(age.toString())
+  }
+
   return (
     <div
       className="
@@ -57,6 +79,63 @@ function Page() {
           </CardContent>
         </Card>
       </div>
+
+      <div className="min-h-screen w-full flex items-center justify-center p-4">
+      <form className="w-full max-w-7xl bg-white border-2 border-gray-100 p-8 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">Personal Information</h2>
+        
+        <div className="mb-4">
+          <Label htmlFor="name" className="font-bold text-gray-700">Name</Label>
+          <Input type="text" id="name" placeholder="John Doe" className="mt-1 border-gray-300 text-gray-800" />
+        </div>
+        
+        <div className="mb-4">
+          <Label htmlFor="contact" className="font-bold text-gray-700">Contact</Label>
+          <Input type="text" id="contact" placeholder="Contact information" className="mt-1 border-gray-300 text-gray-800" />
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <Label htmlFor="email" className="font-bold text-gray-700">Email</Label>
+            <Input type="email" id="email" placeholder="john@example.com" className="mt-1 border-gray-300 text-gray-800" />
+          </div>
+          <div>
+            <Label htmlFor="phone" className="font-bold text-gray-700">Phone</Label>
+            <Input type="tel" id="phone" placeholder="(123) 456-7890" className="mt-1 border-gray-300 text-gray-800" />
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <Label htmlFor="dob" className="font-bold text-gray-700">Date of Birth</Label>
+            <Input 
+              type="date" 
+              id="dob" 
+              className="mt-1 border-gray-300 text-gray-800"
+              onChange={(e) => calculateAge(e.target.value)}
+            />
+          </div>
+          <div>
+            <Label htmlFor="age" className="font-bold text-gray-700">Age</Label>
+            <Input type="text" id="age" value={age} readOnly className="mt-1 border-gray-300 text-gray-800 bg-gray-100" />
+          </div>
+        </div>
+        
+        <div className="mb-4">
+          <Label htmlFor="birthTime" className="font-bold text-gray-700">Birth Time</Label>
+          <Input type="time" id="birthTime" className="mt-1 border-gray-300 text-gray-800" />
+        </div>
+        
+        <div className="mb-6">
+          <Label htmlFor="notes" className="font-bold text-gray-700">Notes</Label>
+          <Textarea id="notes" placeholder="Additional notes..." className="mt-1 border-gray-300 text-gray-800" />
+        </div>
+        
+        <Button type="submit" className="w-full bg-gray-800 hover:bg-gray-700 text-white">
+          Submit
+        </Button>
+      </form>
+    </div>
 
       <Footer />
     </div>
