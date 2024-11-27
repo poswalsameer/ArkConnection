@@ -1,8 +1,30 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import React from 'react'
+import { useToast } from "@/hooks/use-toast"
+import React, { useState } from 'react'
 
 function Email() {
+
+    const { toast } = useToast();
+    const [userEmail, setUserEmail] = useState<string>('');
+
+    const addToNewsletter = () => {
+
+        if( userEmail === '' ){
+            toast({
+                title: "No email entered",
+            })
+        }
+        else{
+            toast({
+                title: "You have been added to the newsletter",
+            })
+        }
+
+    }
+
   return (
     <div className='
     h-56 w-[90%] my-20 bg-[#edf6f9] flex flex-col justify-between items-center rounded-lg 
@@ -68,6 +90,8 @@ function Email() {
             xl:h-full xl:w-[70%] xl:text-black xl:text-lg xl:font-bold xl:rounded-l-full xl:bg-slate-200
             2xl:h-full 2xl:w-[70%] 2xl:text-black 2xl:text-lg 2xl:font-bold 2xl:rounded-l-full 2xl:bg-slate-200'
             placeholder='Enter your email'
+            value={userEmail}
+            onChange={ (e) => setUserEmail(e.target.value) }
             >
             </Input>
             <Button className='
@@ -78,7 +102,10 @@ function Email() {
             md:h-full md:w-[30%] md:text-sm md:font-bold md:rounded-r-full md:bg-[#8d99ae] md:hover:bg-[#9facc1]
             lg:h-full lg:w-[30%] lg:text-lg lg:font-bold lg:rounded-r-full lg:bg-[#8d99ae] lg:hover:bg-[#9facc1]
             xl:h-full xl:w-[30%] xl:text-lg xl:font-bold xl:rounded-r-full xl:bg-[#8d99ae] xl:hover:bg-[#9facc1]
-            2xl:h-full 2xl:w-[30%] 2xl:text-lg 2xl:font-bold 2xl:rounded-r-full 2xl:bg-[#8d99ae] 2xl:hover:bg-[#9facc1] '>
+            2xl:h-full 2xl:w-[30%] 2xl:text-lg 2xl:font-bold 2xl:rounded-r-full 2xl:bg-[#8d99ae] 2xl:hover:bg-[#9facc1] '
+            
+            onClick={addToNewsletter}
+            >
                 Join
             </Button>
 

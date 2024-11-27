@@ -1,5 +1,6 @@
 import QuizReportContextProvider from "./context/quizReportContextProvider";
 import { Poppins, PT_Sans } from 'next/font/google';
+import { Toaster } from "@/components/ui/toaster"
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         className={PTSans.className}
       >
         {children}
+        <Toaster />
       </body>
     </html>
     

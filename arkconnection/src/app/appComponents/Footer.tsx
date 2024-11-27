@@ -12,13 +12,14 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-800 py-12 h-full w-full px-12">
-      <div className="relative px-4 md:px-6 w-full">
+    <footer className=" text-gray-800 py-12 h-full w-full px-12">
+      <div className="relative px-0 md:px-6 w-full">
         <div
           className="
           relative
-                  h-64
-                  bg-cover
+                  h-[30rem] 
+                  sm:h-72
+                  bg-contain
                   bg-center
                   items-center
                   "
@@ -29,7 +30,7 @@ export default function Footer() {
             opacity: 0.1,
           }}
         ></div>
-        <div className="absolute top-10 flex flex-row justify-around gap-8 w-full  ">
+        <div className="absolute top-10 flex flex-col sm:flex-row justify-around gap-8 w-full  ">
           {/* Social Links */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-gray-900">Social Links</h3>
@@ -111,13 +112,14 @@ function SocialLink({
   label: string;
 }) {
   return (
-    <Link
+    <a
       href={href}
+      target="_blank"
       className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
     >
       {icon}
       <span>{label}</span>
-    </Link>
+    </a>
   );
 }
 

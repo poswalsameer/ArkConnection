@@ -33,7 +33,7 @@ function Navbar() {
     { name: 'About', onClick: routeToAboutPage },
     { name: 'Courses', onClick: () => {} },
     { name: 'Services', onClick: routeToServicesPage },
-    { name: 'Contact', onClick: routeToContactPage },
+    { name: 'Contact Us', onClick: routeToContactPage },
   ]
 
   return (
@@ -51,11 +51,11 @@ function Navbar() {
           alt="Website logo" 
           className='
           h-56 mt-2
-          sm:h-56 sm:mt-2
+          sm:h-48 sm:mt-2
           md:h-56 md:mt-2
-          lg:h-56 lg:mt-2
-          xl:h-56 xl:mt-2
-          2xl:h-56 2xl:mt-2
+          lg:h-64 lg:mt-2
+          xl:h-64 xl:mt-2
+          2xl:h-64 2xl:mt-2
           '
         />
       </div>
@@ -68,7 +68,7 @@ function Navbar() {
       </div>
 
       {/* Navigation items for larger screens */}
-      <div className='hidden sm:flex justify-center items-center gap-x-5 font-bold'>
+      <div className='text-sm md:text-base hidden sm:flex justify-center items-center gap-x-5 font-bold'>
         {navItems.map((item) => (
           <h1 key={item.name} className='hover:cursor-pointer' onClick={item.onClick}>
             {item.name}
