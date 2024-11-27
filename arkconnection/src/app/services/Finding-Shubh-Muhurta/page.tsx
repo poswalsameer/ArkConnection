@@ -86,7 +86,7 @@ function Page() {
         
         <div className="mb-4">
           <Label htmlFor="name" className="font-bold text-gray-700">Name</Label>
-          <Input type="text" id="name" placeholder="John Doe" className="mt-1 border-gray-300 text-gray-800" />
+          <Input type="text" id="name" placeholder="Ravi Verma" className="mt-1 border-gray-300 text-gray-800" />
         </div>
         
         <div className="mb-4">
@@ -97,11 +97,11 @@ function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <Label htmlFor="email" className="font-bold text-gray-700">Email</Label>
-            <Input type="email" id="email" placeholder="john@example.com" className="mt-1 border-gray-300 text-gray-800" />
+            <Input type="email" id="email" placeholder="ravi@example.com" className="mt-1 border-gray-300 text-gray-800" />
           </div>
           <div>
             <Label htmlFor="phone" className="font-bold text-gray-700">Phone</Label>
-            <Input type="tel" id="phone" placeholder="(123) 456-7890" className="mt-1 border-gray-300 text-gray-800" />
+            <Input type="tel" id="phone" placeholder="(+91)-9876543210" className="mt-1 border-gray-300 text-gray-800" />
           </div>
         </div>
         

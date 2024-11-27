@@ -24,7 +24,7 @@ export default function Footer() {
                   "
           style={{
             backgroundImage:
-              'url("https://arkaconnection.in/wp-content/uploads/2018/07/planets_footer.png")',
+              'url("./FooterImage.jpg")',
             backgroundBlendMode: "overlay",
             opacity: 0.1,
           }}
@@ -39,7 +39,7 @@ export default function Footer() {
               >
                 <SocialLink
                   href="https://www.facebook.com/maharishikapi?mibextid=ZbWKwL"
-                  icon={<Facebook />}
+                  icon={<Facebook className="text-blue-600" />}
                   label="Facebook"
                   
                 />
@@ -47,19 +47,19 @@ export default function Footer() {
               <div
                 className="hover:scale-105 cursor-pointer transition-all duration-300"
               >
-              <SocialLink href="#" icon={<Instagram />} label="Instagram" />
+              <SocialLink href="#" icon={<Instagram className="text-orange-600" />} label="Instagram" />
               </div>
 
               <div
                 className="hover:scale-105 cursor-pointer transition-all duration-300"
               >
-              <SocialLink href="#" icon={<Twitter />} label="Twitter" />
+              <SocialLink href="#" icon={<Twitter className="text-blue-400" />} label="Twitter" />
               </div>
 
               <div
                 className="hover:scale-105 cursor-pointer transition-all duration-300"
               >
-              <SocialLink href="https://youtube.com/@Maharishikapi?si=qp2D3AGCOqzfy7gL" icon={<Youtube />} label="Youtube" />
+              <SocialLink href="https://youtube.com/@Maharishikapi?si=qp2D3AGCOqzfy7gL" icon={<Youtube className="text-red-500" />} label="Youtube" />
               </div>
             </div>
           </div>

@@ -70,10 +70,10 @@ function Testimonials() {
     const images = [
         "https://arkaconnection.in/wp-content/uploads/2024/01/90f37e_732dc7d9eb8344a4b204b9493d728043mv2.webp", 
         "https://arkaconnection.in/wp-content/uploads/2024/01/90f37e_f6390b3ab9fe472ca749a563d601afb1mv2.webp",
-        "https://arkaconnection.in/wp-content/uploads/2024/01/d07b594951e9487c862788780fd72dd3.webp",
-        "https://arkaconnection.in/wp-content/uploads/2024/01/7fba3905ea184ee29642cf0def056821.webp",
+        "./BirthChart.jpg",
+        "./vastu.jpg",
         "https://arkaconnection.in/wp-content/uploads/2024/01/11062b_acf574ddd70b46e0b38086256ea2ddbcmv2.webp",
-        "https://arkaconnection.in/wp-content/uploads/2024/01/11062b_bcca276530a3448abd24mv2.webp"
+        "./90MinAstrology.jpg"
     ]
 
     const serviceName = [
