@@ -3,6 +3,7 @@ import Courses from "./appComponents/Courses";
 import Email from "./appComponents/Email";
 import Footer from "./appComponents/Footer";
 import Hero from "./appComponents/Hero";
+import HomeGallery from "./appComponents/HomeGallery";
 import Navbar from "./appComponents/Navbar";
 import Planets from "./appComponents/Planets";
 import Quiz from "./appComponents/Quiz";
@@ -25,6 +26,7 @@ export default function Home() {
       <Testimonials />
       <VideoTestimonials  />
       <Courses />
+      <HomeGallery />
       <Quiz />
       <Email />
       {/* <Planets /> */}
