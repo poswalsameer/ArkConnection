@@ -7,6 +7,7 @@ import Navbar from "./appComponents/Navbar";
 import Planets from "./appComponents/Planets";
 import Quiz from "./appComponents/Quiz";
 import Testimonials from "./appComponents/Testimonials";
+import VideoTestimonials from "./appComponents/VideoTestimonials";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Testimonials />
+      <VideoTestimonials  />
       <Courses />
       <Quiz />
       <Email />

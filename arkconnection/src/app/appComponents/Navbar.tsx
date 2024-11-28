@@ -56,7 +56,10 @@ function Navbar() {
           lg:h-64 lg:mt-2
           xl:h-64 xl:mt-2
           2xl:h-64 2xl:mt-2
+
+          hover:cursor-pointer
           '
+          onClick={() => router.push("/")}
         />
       </div>
 

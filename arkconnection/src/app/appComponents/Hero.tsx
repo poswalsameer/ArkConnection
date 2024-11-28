@@ -1,7 +1,11 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
+// import { useRouter } from 'next/navigation';
 
 function Hero() {
+
+    // const router = useRouter();
+
   return (
     <div className='
     h-full w-full flex flex-col justify-center items-center gap-y-20
@@ -69,8 +73,10 @@ function Hero() {
             2xl:mt-3 2xl:h-12 2xl:w-36 2xl:text-base 
             
             bg-black text-[#e6ccb2] font-bold rounded-full
-            '>
-                Chat Now
+            '
+            >
+                <a href="https://calendly.com/arkaconnection" target="_blank">Chat Now</a>
+                
             </Button>
         </div>
 
