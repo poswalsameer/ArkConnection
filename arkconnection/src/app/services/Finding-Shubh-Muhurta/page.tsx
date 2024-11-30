@@ -1,30 +1,33 @@
-'use client'
+"use client";
 
 import Footer from "@/app/appComponents/Footer";
 import Navbar from "@/app/appComponents/Navbar";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import React, { useState } from "react";
 
 function Page() {
-
-  const [age, setAge] = useState('')
+  const [age, setAge] = useState("");
 
   const calculateAge = (dob: string) => {
-    const birthDate = new Date(dob)
-    const today = new Date()
-    let age = today.getFullYear() - birthDate.getFullYear()
-    const monthDiff = today.getMonth() - birthDate.getMonth()
-    
-    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-      age--
+    const birthDate = new Date(dob);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
     }
-    
-    setAge(age.toString())
-  }
+
+    setAge(age.toString());
+  };
 
   return (
     <div
@@ -44,8 +47,11 @@ function Page() {
       <div className="container mx-auto px-4 py-8">
         <Card className="max-w-7xl mx-auto">
           <CardContent className="flex flex-col items-center p-6 space-y-6">
-            
-            <img src="https://arkaconnection.in/wp-content/uploads/2024/01/90f37e_732dc7d9eb8344a4b204b9493d728043mv2.webp" alt="" className="rounded-full" />
+            <img
+              src="https://arkaconnection.in/wp-content/uploads/2024/01/90f37e_732dc7d9eb8344a4b204b9493d728043mv2.webp"
+              alt=""
+              className="rounded-full"
+            />
 
             <h1 className="text-5xl font-bold text-center">
               Finding Shubh Muhurta
@@ -80,62 +86,50 @@ function Page() {
         </Card>
       </div>
 
-      <div className="min-h-screen w-full flex items-center justify-center p-4">
-      <form className="w-full max-w-7xl bg-white border-2 border-gray-100 p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">Personal Information</h2>
-        
-        <div className="mb-4">
-          <Label htmlFor="name" className="font-bold text-gray-700">Name</Label>
-          <Input type="text" id="name" placeholder="Ravi Verma" className="mt-1 border-gray-300 text-gray-800" />
-        </div>
-        
-        <div className="mb-4">
-          <Label htmlFor="contact" className="font-bold text-gray-700">Contact</Label>
-          <Input type="text" id="contact" placeholder="Contact information" className="mt-1 border-gray-300 text-gray-800" />
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-          <div>
-            <Label htmlFor="email" className="font-bold text-gray-700">Email</Label>
-            <Input type="email" id="email" placeholder="ravi@example.com" className="mt-1 border-gray-300 text-gray-800" />
-          </div>
-          <div>
-            <Label htmlFor="phone" className="font-bold text-gray-700">Phone</Label>
-            <Input type="tel" id="phone" placeholder="(+91)-9876543210" className="mt-1 border-gray-300 text-gray-800" />
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-          <div>
-            <Label htmlFor="dob" className="font-bold text-gray-700">Date of Birth</Label>
-            <Input 
-              type="date" 
-              id="dob" 
-              className="mt-1 border-gray-300 text-gray-800"
-              onChange={(e) => calculateAge(e.target.value)}
-            />
-          </div>
-          <div>
-            <Label htmlFor="age" className="font-bold text-gray-700">Age</Label>
-            <Input type="text" id="age" value={age} readOnly className="mt-1 border-gray-300 text-gray-800 bg-gray-100" />
-          </div>
-        </div>
-        
-        <div className="mb-4">
-          <Label htmlFor="birthTime" className="font-bold text-gray-700">Birth Time</Label>
-          <Input type="time" id="birthTime" className="mt-1 border-gray-300 text-gray-800" />
-        </div>
-        
-        <div className="mb-6">
-          <Label htmlFor="notes" className="font-bold text-gray-700">Notes</Label>
-          <Textarea id="notes" placeholder="Additional notes..." className="mt-1 border-gray-300 text-gray-800" />
-        </div>
-        
-        <Button type="submit" className="w-full bg-gray-800 hover:bg-gray-700 text-white">
-          Submit
-        </Button>
-      </form>
-    </div>
+      <Card className="w-full max-w-md mx-auto">
+        <CardHeader>
+          <CardTitle className="text-2xl text-center">
+            Kundli / Birth Chart
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <form className="space-y-6">
+            <div className="space-y-2">
+              <Label htmlFor="name">Enter Birth Details</Label>
+              <Input id="name" placeholder="Name" />
+            </div>
+
+            <Select defaultValue="male">
+              <SelectTrigger>
+                <SelectValue placeholder="Select gender" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="male">Male</SelectItem>
+                <SelectItem value="female">Female</SelectItem>
+                <SelectItem value="other">Other</SelectItem>
+              </SelectContent>
+            </Select>
+
+            <div className="grid grid-cols-3 gap-4">
+              <Input type="number" placeholder="23" />
+              <Input type="number" placeholder="11" />
+              <Input type="number" placeholder="2024" />
+            </div>
+
+            <div className="grid grid-cols-3 gap-4">
+              <Input type="number" placeholder="19" />
+              <Input type="number" placeholder="0" />
+              <Input type="number" placeholder="20" />
+            </div>
+
+            <Input placeholder="Birth place" />
+
+            <Button className="w-full bg-black hover:bg-black/90" size="lg">
+              GET KUNDLI
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
 
       <Footer />
     </div>
