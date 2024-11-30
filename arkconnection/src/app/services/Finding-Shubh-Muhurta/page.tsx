@@ -10,6 +10,30 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import React, { useState } from "react";
 
+const EXCHANGE_RATE = 0.012 // 1 INR = 0.012 USD (example rate)
+
+function PriceDisplay({ priceINR }: { priceINR: number }) {
+  const [currency, setCurrency] = useState<'INR' | 'USD'>('INR')
+
+  const toggleCurrency = () => {
+    setCurrency(prev => prev === 'INR' ? 'USD' : 'INR')
+  }
+
+  const displayPrice = currency === 'INR' ? priceINR : priceINR * EXCHANGE_RATE
+  const formattedPrice = displayPrice.toFixed(2)
+
+  return (
+    <Card className="w-full max-w-md mx-auto mt-6">
+      <CardContent className="flex items-center justify-between p-4">
+        <div className="text-2xl font-bold">{formattedPrice} {currency}</div>
+        <Button onClick={toggleCurrency} variant="outline" className="border-2 border-gray-300">
+          Switch to {currency === 'INR' ? 'USD' : 'INR'}
+        </Button>
+      </CardContent>
+    </Card>
+  )
+}
+
 function Page() {
   const [age, setAge] = useState("");
 
@@ -95,7 +119,7 @@ function Page() {
         <CardContent>
           <form className="space-y-6">
             <div className="space-y-2">
-              <Label htmlFor="name">Enter Birth Details</Label>
+              <Label htmlFor="name" className="font-bold">Enter Birth Details</Label>
               <Input id="name" placeholder="Name" />
             </div>
 
@@ -124,12 +148,14 @@ function Page() {
 
             <Input placeholder="Birth place" />
 
-            <Button className="w-full bg-black hover:bg-black/90" size="lg">
+            <Button className="w-full font-bold bg-black hover:bg-black/90" size="lg">
               GET KUNDLI
             </Button>
           </form>
         </CardContent>
       </Card>
+
+      <PriceDisplay priceINR={3500} />
 
       <Footer />
     </div>
